@@ -1,6 +1,6 @@
 # Tic Tac Toe Game
 
-## User Story
+<!-- ## User Story
 
 ### User need to Sign up or Sign in with email and password to play this simple browser game.
   1) User will see the game board grid to start playing the game
@@ -13,9 +13,19 @@
   8) User can also see records of his previous games and the score
 ## nUser will not see the form to sign in or sign up page if user is sign in already
   1) User can change there password or sign out anytime
-## After player sign out the form for sign up or sign in is visible on the game board
+## After player sign out the form for sign up or sign in is visible on the game board -->
+
+Auth
+
+As a not signed in user, I want to be able to sign up with email, password, and password confirmation
+  if they provide a unique email and password and password confirmation match then sign up successfully
+  if they provide a not unique email then sign up fails
+  if they provide a unique email but password and password confirmation do not match then sign up fails
+As a not signed in user, I want to be able to sign in with email and password
+As a signed in user, I want to be able to change my password
+As a signed in user, I want to be able to sign out
+
+Game
 
 ## Wire Frame
    ('http://tenmediatech.com/tic-tac-toe/')
-
-   
