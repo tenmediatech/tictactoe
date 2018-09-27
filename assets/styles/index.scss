@@ -1,11 +1,13 @@
 @import '~bootstrap/scss/bootstrap';
 
-$background-color: #919ade;
+$background-color: white;
 $font-color: #dfdfdf;
 $white: #fff;
 $grey: rgb(128, 128, 128);
 $teal: rgb(0, 156, 161);
 $black: #000;
+$player: #edf77b;
+$feedback: #edf77b;
 
 body {
   background-color: $background-color;
@@ -26,4 +28,48 @@ body {
 
 .teal {
   background-color: $teal;
+}
+
+.grid {
+  margin: 1em auto;
+  border-collapse: collapse;
+}
+.grid td {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-family: sans-serif;
+    font-size:13px
+}
+.grid td.clicked {
+    background-color: yellow;
+    font-weight:bold;
+    color: red;
+}
+
+.players {
+  //background-color: $player;
+  color: $player;
+}
+.feedback {
+  //background-color: $player;
+  color: $feedback;
+}
+
+// fieldset {
+//     display: block;
+//     margin-left: 2px;
+//     margin-right: 2px;
+//     padding-top: 0.35em;
+//     padding-bottom: 0.625em;
+//     padding-left: 0.75em;
+//     padding-right: 0.75em;
+//     border: 3px solid black;
+// }
+
+.heading {
+  text-align: center;
+  color: blue;
 }

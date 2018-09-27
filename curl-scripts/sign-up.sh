@@ -1,3 +1,5 @@
+# sh curl-scripts/json/sign-up.sh
+
 curl "https://tic-tac-toe-wdi.herokuapp.com/sign-up" \
   --include \
   --request POST \
