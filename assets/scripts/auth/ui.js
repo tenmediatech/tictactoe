@@ -3,23 +3,26 @@
 const store = require('../store.js')
 
 const signUpSuccess = function (data) {
-  $('#sign-up-message').html('Sign up successful')
-  $('#sign-up-message').css('color', 'green')
+  $('#feedback').html('Sign up successful')
+  $('#feedback').css('font-size: 30px')
+  // $('#sign-up-message').html('Sign up successful')
+  // $('#sign-up-message').css('color', 'green')
   $('#sign-up-form').trigger('reset')
+  // $('#loadGame').hide()
 }
 
 const signUpFailure = function () {
-  $('#sign-up-messagee').html('Something went wrong, please try again')
-  $('#sign-up-message').css('color', 'green')
+  $('#feedback').html('Something went wrong, please try again')
+  $('#feedback').css('font-size: 30px')
+  // $('#sign-up-messagee').html('Something went wrong, please try again')
+  // $('#sign-up-message').css('color', 'green')
   $('#sign-up-form').trigger('reset')
+  // $('#loadGame').hide()
 }
 
 const signInSuccess = function (response) {
-  $('#sign-in-message').html('Sign in successful')
-  $('#sign-in-message').css('color', 'green')
-  $('#container').html('Game Board')
-
-
+  $('#feedback').html('User Signed In, Start Game')
+  $('#feedback').css('font-size: 30px')
   $('#sign-in-form').trigger('reset')
   store.user = response.user
   $('#sign-up-form').addClass('hidden')
@@ -28,23 +31,62 @@ const signInSuccess = function (response) {
   $('#sign-out-button').removeClass('hidden')
   $('#create-example-form').removeClass('hidden')
   $('#container').html('Game Board').hide()
+  // $('#loadGame').hide()
 }
 
 const signInFailure = function () {
-  $('#sign-in-message').html('Something went wrong, please try again')
-  $('#sign-in-message').css('color', 'green')
+  $('#feedback').html('Something went wrong, please try again')
+  $('#feedback').css('color', 'green')
+  // $('#sign-in-message').html('Something went wrong, please try again')
+  // $('#sign-in-message').css('color', 'green')
   $('#sign-in-form').trigger('reset')
 }
 
 const changeedPassword = function () {
-  $('#change-password-message').html('Password Changed successful')
-  $('#change-password-message').css('color', 'green')
+  $('#feedback').html('Password Changed successful')
+  $('#feedback').css('color', 'green')
+  // $('#change-password-message').html('Password Changed successful')
+  $('#feedback').css('color', 'green')
+  // $('#change-password-message').css('color', 'green')
+  // $('#loadGame').hide()
   $('#change-password-form').trigger('reset')
 }
 
 const signOutSuccess = function () {
-  $('#sign-out-message').html('Sign Out successful')
-  $('#sign-out-message').css('color', 'green')
+  $('#feedback').html('Bye Bye')
+  $('#feedback').css('color', 'green')
+  $('#loadGame').hide()
+  $('#change-password-form').trigger('reset')
+  // $('#sign-out-message').html('Sign Out successful')
+  // $('#sign-out-message').css('color', 'green')
+}
+
+// Hide the game board on loading page
+$(document).ready(function () {
+  $('#loadGame').hide()
+})
+
+const createGameSuccess = function (response) {
+  $('#loadGame').show()
+  $('#feedback').html('Start your game')
+  store.game = response.game
+  // $('#newGame').trigger('reset')
+  // for (let i = 0; i < 9; i++) {
+  //   $(`#box${i}`).on('click', onClickBox)
+  // }
+}
+
+const getGameSuccess = function (response) {
+  console.log(response)
+  $('#loadGame').hide()
+  // $('#feedback').html('Game Loaded')
+  // store.games = response.game
+  $('#feedback').html(`You have ${response.games.length} games`)
+}
+
+const updateGameSuccess = function (response) {
+  store.game = response.game
+  // console.log(store.game)
 }
 
 module.exports = {
@@ -53,5 +95,8 @@ module.exports = {
   signInSuccess,
   signInFailure,
   changeedPassword,
-  signOutSuccess
+  signOutSuccess,
+  createGameSuccess,
+  getGameSuccess,
+  updateGameSuccess
 }

@@ -4,7 +4,7 @@ $background-color: white;
 $font-color: #dfdfdf;
 $white: #fff;
 $grey: rgb(128, 128, 128);
-$teal: rgb(0, 156, 161);
+$teal: #2f4154; // rgb(0, 156, 161);
 $black: #000;
 $player: #edf77b;
 $feedback: #edf77b;
@@ -54,20 +54,19 @@ body {
   color: $player;
 }
 .feedback {
-  //background-color: $player;
-  color: $feedback;
+  font-size: 28px;
 }
 
-// fieldset {
-//     display: block;
-//     margin-left: 2px;
-//     margin-right: 2px;
-//     padding-top: 0.35em;
-//     padding-bottom: 0.625em;
-//     padding-left: 0.75em;
-//     padding-right: 0.75em;
-//     border: 3px solid black;
-// }
+.playerX {
+  background-color: #fb474d;
+  font-size: 40px;
+  // content: "X";
+}
+ .playerO {
+  background-color: #74bfdd;
+  font-size: 40px;
+  // content: "O";
+}
 
 .heading {
   text-align: center;
