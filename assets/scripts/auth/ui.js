@@ -69,6 +69,7 @@ $(document).ready(function () {
 const createGameSuccess = function (response) {
   $('#loadGame').show()
   $('#feedback').html('Start your game')
+  store.counter = 0
   store.game = response.game
   // $('#newGame').trigger('reset')
   // for (let i = 0; i < 9; i++) {

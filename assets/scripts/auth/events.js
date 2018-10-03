@@ -61,6 +61,7 @@ const onCreateGame = function () {
 
 // On Click Game Update
 store.click = 0
+// const clickCount = store.click
 const onClickBox = function (event) {
   let data
   const currentIndex = $(event.target).data('index')
@@ -97,7 +98,7 @@ const onClickBox = function (event) {
       }
     }
   }
-  api.finalWinner()
+  api.finalWinner(store.click)
   api.updateGame(data)
     .then(ui.updateGameSuccess)
     .catch(ui.updateGameFailure)
