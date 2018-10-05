@@ -78,7 +78,7 @@ const onClickBox = function (event) {
             'index': currentIndex,
             'value': 'x'
           },
-          'over': false
+          'over': store.game.over
         }
       }
     } else {
@@ -93,7 +93,7 @@ const onClickBox = function (event) {
             'index': currentIndex,
             'value': 'o'
           },
-          'over': false
+          'over': store.game.over
         }
       }
     }

@@ -87,71 +87,88 @@ const finalWinner = function () {
     $('#feedback').html('Tie Game, try again')
     $('#loadGame').hide()
     store.counter = 0
+    store.game.over = true
   }
   if ($('#box1').hasClass('playerX') && $('#box2').hasClass('playerX') && $('#box3').hasClass('playerX')) {
     $('#feedback').html('Player X is winner')
     $('#loadGame').hide()
     store.counter = 0
+    store.game.over = true
   } else if ($('#box1').hasClass('playerO') && $('#box2').hasClass('playerO') && $('#box3').hasClass('playerO')) {
     $('#feedback').html('Player O is winner')
     $('#loadGame').hide()
     store.counter = 0
+    store.game.over = true
   } else if ($('#box4').hasClass('playerX') && $('#box5').hasClass('playerX') && $('#box6').hasClass('playerX')) {
     $('#feedback').html('Player X is winner')
     $('#loadGame').hide()
     store.counter = 0
+    store.game.over = true
   } else if ($('#box4').hasClass('playerO') && $('#box5').hasClass('playerO') && $('#box6').hasClass('playerO')) {
     $('#feedback').html('Player O is winner')
     $('#loadGame').hide()
     store.counter = 0
+    store.game.over = true
   } else if ($('#box7').hasClass('playerX') && $('#box8').hasClass('playerX') && $('#box9').hasClass('playerX')) {
     $('#feedback').html('Player X is winner')
     $('#loadGame').hide()
     store.counter = 0
+    store.game.over = true
   } else if ($('#box7').hasClass('playerO') && $('#box8').hasClass('playerO') && $('#box9').hasClass('playerO')) {
     $('#feedback').html('Player O is winner')
     $('#loadGame').hide()
     store.counter = 0
+    store.game.over = true
   } else if ($('#box1').hasClass('playerX') && $('#box4').hasClass('playerX') && $('#box7').hasClass('playerX')) {
     $('#feedback').html('Player X is winner')
     $('#loadGame').hide()
     store.counter = 0
+    store.game.over = true
   } else if ($('#box1').hasClass('playerO') && $('#box4').hasClass('playerO') && $('#box7').hasClass('playerO')) {
     $('#feedback').html('Player O is winner')
     $('#loadGame').hide()
     store.counter = 0
+    store.game.over = true
   } else if ($('#box2').hasClass('playerX') && $('#box5').hasClass('playerX') && $('#box8').hasClass('playerX')) {
     $('#feedback').html('Player X is winner')
     $('#loadGame').hide()
     store.counter = 0
+    store.game.over = true
   } else if ($('#box2').hasClass('playerO') && $('#box5').hasClass('playerO') && $('#box8').hasClass('playerO')) {
     $('#feedback').html('Player O is winner')
     $('#loadGame').hide()
     store.counter = 0
+    store.game.over = true
   } else if ($('#box3').hasClass('playerX') && $('#box6').hasClass('playerX') && $('#box9').hasClass('playerX')) {
     $('#feedback').html('Player X is winner')
     $('#loadGame').hide()
     store.counter = 0
+    store.game.over = true
   } else if ($('#box3').hasClass('playerO') && $('#box6').hasClass('playerO') && $('#box9').hasClass('playerO')) {
     $('#feedback').html('Player O is winner')
     $('#loadGame').hide()
     store.counter = 0
+    store.game.over = true
   } else if ($('#box1').hasClass('playerX') && $('#box5').hasClass('playerX') && $('#box9').hasClass('playerX')) {
     $('#feedback').html('Player X is winner')
     $('#loadGame').hide()
     store.counter = 0
+    store.game.over = true
   } else if ($('#box1').hasClass('playerO') && $('#box5').hasClass('playerO') && $('#box9').hasClass('playerO')) {
     $('#feedback').html('Player O is winner')
     $('#loadGame').hide()
     store.counter = 0
+    store.game.over = true
   } else if ($('#box3').hasClass('playerX') && $('#box5').hasClass('playerX') && $('#box7').hasClass('playerX')) {
     $('#feedback').html('Player X is winner')
     $('#loadGame').hide()
     store.counter = 0
+    store.game.over = true
   } else if ($('#box3').hasClass('playerO') && $('#box5').hasClass('playerO') && $('#box7').hasClass('playerO')) {
     $('#feedback').html('Player O is winner')
     $('#loadGame').hide()
     store.counter = 0
+    store.game.over = true
   }
 
   // if ($('#' + currentRow[0]).hasClass('playerX') && $('#' + currentRow[1]).hasClass('playerX') && $('#' + currentRow[2]).hasClass('playerX')) {
