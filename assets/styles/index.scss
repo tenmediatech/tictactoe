@@ -15,12 +15,7 @@ body {
 }
 
 .userform {
-  // margin: auto;
-  // width: 50%;
-  // border: 1px solid #2f4154;
-  // padding-top: 20px;
   text-align: center;
-  // display: inline-block;
 }
 
 button {
@@ -75,7 +70,7 @@ button {
 }
 
 .players {
-  //background-color: $player;
+  font-family: fantasy;
   color: $player;
 }
 .feedback {
@@ -85,15 +80,23 @@ button {
 .playerX {
   background-color: #fb474d;
   font-size: 40px;
-  // content: "X";
+  font-family: fantasy;
 }
  .playerO {
   background-color: #74bfdd;
   font-size: 40px;
-  // content: "O";
+  font-family: fantasy;
 }
 
 .heading {
   text-align: center;
+  font-family: fantasy;
   color: blue;
+}
+
+.copyrights {
+  text-align: center;
+  color: gray;
+  font-size: 15px;
+  font-family: fantasy;
 }
