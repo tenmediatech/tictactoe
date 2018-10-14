@@ -34,10 +34,6 @@ const onChangePassword = function (event) {
 // let showhide = 1
 const onSignOut = function (event) {
   const data = getFormFields(event.target)
-  // if (showhide > 0) {
-  //   $('#loadGame').hide()
-  //   showhide--
-  // }
   api.signOut(data)
     .then(ui.signOutSuccess)
     .catch(ui.signOutFailure)
@@ -51,8 +47,6 @@ const onCreateGame = function () {
     $(`#box${i}`).text('')
     $(`#box${i}`).removeClass('playerX')
     $(`#box${i}`).removeClass('playerO')
-    // $(`#box${i}`).on('click')
-    // $(`#box${i}`).on('click', onClickBox)
   }
   api.createGame()
     .then(ui.createGameSuccess)
@@ -61,7 +55,6 @@ const onCreateGame = function () {
 
 // On Click Game Update
 store.click = 0
-// const clickCount = store.click
 const onClickBox = function (event) {
   let data
   const currentIndex = $(event.target).data('index')

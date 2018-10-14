@@ -101,3 +101,12 @@ Authentication Specifications
   - Logout and Change password must only be available to signed in users.
   - Give feedback to the user after each action's success or failure.
   - All forms must clear after submit success or failure
+
+List unsolved problems which would be fixed in future iterations
+1) More detail game inforation to the user game information inquest with folllowing details
+    - How many Player X wins
+    - How many Player O wins
+    - How many tie games played.
+2) Undate to UI that kids will love to play simple game.
+3) Add features to User Authentication
+    - Reset password features for forget password or email

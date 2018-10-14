@@ -2,7 +2,6 @@
 
 const config = require('../config.js')
 const store = require('../store.js')
-// const authEvents = require('./events.js')
 
 const signUp = function (userData) {
   return $.ajax({
@@ -49,10 +48,6 @@ const createGame = function (userData) {
       Authorization: `Token token=${store.user.token}`
     },
     method: 'POST'
-    // data: {
-    //   'games': [
-    //   ]
-    // }
   })
 }
 
@@ -80,7 +75,6 @@ const updateGame = function (clickData) {
 }
 
 // Final Winner Check
-// let counter = 0
 const finalWinner = function () {
   store.counter += 1
   if (store.counter >= 9) {
@@ -170,12 +164,6 @@ const finalWinner = function () {
     store.counter = 0
     store.game.over = true
   }
-
-  // if ($('#' + currentRow[0]).hasClass('playerX') && $('#' + currentRow[1]).hasClass('playerX') && $('#' + currentRow[2]).hasClass('playerX')) {
-  //   $('#feedback').html('Player X is winner')
-  //   $('#loadGame').hide()
-  // } else if ($('#' + currentRow[0]).hasClass('playerO') && $('#' + currentRow[1]).hasClass('playerO') && $('#' + currentRow[2]).hasClass('playerO')) {
-  // }
 }
 
 module.exports = {
