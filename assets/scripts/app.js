@@ -29,6 +29,7 @@ $(() => {
   $('#box1').on('click', authEvents.onClickBox)
   // $('#box1').on('click', function () {
   //   $(this).off('click') // or $(this).unbind()
+  //   $('#feedback').text('Wrong move')
   // })
   $('#box2').on('click', authEvents.onClickBox)
   // $('#box2').on('click', function () {
