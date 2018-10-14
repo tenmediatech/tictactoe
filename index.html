@@ -12,7 +12,7 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-
+      <!-- Heading of Game Board -->
       <div class="container">
         <div class="row">
           <div class="col-6 col-md-12 box teal" id="playerX">
@@ -22,65 +22,37 @@
       </div>
       <br />
       <!-- sign up form -->
-      <!-- <div class="container"> -->
-        <!-- <div class="row"> -->
-          <!-- <div class="col-6 col-md-3 box teal" id="playerX"> -->
-            <!-- <h3 id="sign-up-message"></h3> -->
           <div class="userform">
             <form id="sign-up-form">
-              <!-- <fieldset> -->
-                <!-- <legend>Sign Up!</legend> -->
                 <input required placeholder="Enter Email" name="credentials[email]" type="email" />
                 <input required placeholder="Password" name="credentials[password]" type="password"/>
                 <input required placeholder="Confirm Password" name="credentials[password_confirmation]" type="password"/>
                 <button type="submit">Sign Up</button>
-                <!-- <input type="submit" placeholder="Sign Up"/> -->
-              <!-- </fieldset> -->
             </form>
           <br />
-          <!-- </div> -->
 
       <!-- sign in -->
-        <!-- <div class="col-6 col-md-3 box teal" id="playerX"> -->
-          <!-- <h3 id="sign-in-message"></h3> -->
           <form id="sign-in-form">
-            <!-- <fieldset> -->
-              <!-- <legend>Sign In!</legend> -->
               <input required placeholder="Enter Email" name="credentials[email]" type="email" />
               <input required placeholder="Password" name="credentials[password]" type="password"/>
               <button type="submit">Sign In</button>
-            <!-- </fieldset> -->
           </form>
-        <!-- </div> -->
   <br />
       <!-- Change password -->
-      <!-- <div class="container"> -->
-        <!-- <div class="row"> -->
-        <!-- <div class="col-6 col-md-3 box teal" id="playerX"> -->
-          <!-- <h3 id="change-password-message"></h3> -->
           <form id="change-password-form">
-            <!-- <fieldset> -->
-              <!-- <legend>Change Password!</legend> -->
               <input required placeholder="Old Password" name="passwords[old]" type="password"/>
               <input required placeholder="New Password" name="passwords[new]" type="password"/>
               <button type="submit">Submit</button>
-            <!-- </fieldset> -->
           </form>
-        <!-- </div> -->
-      <!-- sout out -->
       <br />
-          <!-- <div class="col-6 col-md-3 box teal" id="playerX"> -->
+          <!-- Game Control Buttons-->
           <div class="actionbutton">
             <button id="sign-out-button">Sign Out</button>
             <button id="newGame">New Game</button>
             <button id="getGames">Get Games</button>
           </div>
             <br />
-            <!-- <br /> -->
           </div>
-        <!-- </div>
-      </div>
-    </div> -->
       <!-- Game Board -->
       <div class="container">
       <div id="loadGame">
