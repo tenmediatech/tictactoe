@@ -101,3 +101,11 @@ Authentication Specifications
   - Logout and Change password must only be available to signed in users.
   - Give feedback to the user after each action's success or failure.
   - All forms must clear after submit success or failure
+
+  Unsolved Problems
+  1) More detail inforation for user's game when request for game information
+  2) More interective User Interface
+  3) Giving more informative feedback for users games
+  4) Handle user request for forget email or password.
+  5) Password validation to accept secure password. 
+  List unsolved problems which would be fixed in future iterations.

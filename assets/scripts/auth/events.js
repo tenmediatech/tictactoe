@@ -69,7 +69,6 @@ const onClickBox = function (event) {
     if (store.click % 2 === 0) {
       $(this).addClass('playerX')
       $(event.target).text('X')
-      // console.log(currentIndex)
       $('#feedback').html('Player O turn')
       store.click++
       data = {
@@ -97,8 +96,11 @@ const onClickBox = function (event) {
         }
       }
     }
+  } else {
+    $('#feedback').html('Invalid Move')
+    this.target.event.off('click')
   }
-  api.finalWinner(store.click)
+  api.finalWinner()
   api.updateGame(data)
     .then(ui.updateGameSuccess)
     .catch(ui.updateGameFailure)

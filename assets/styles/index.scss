@@ -50,7 +50,7 @@ body {
 }
 
 .players {
-  //background-color: $player;
+  font-family: fantasy;
   color: $player;
 }
 .feedback {
@@ -60,15 +60,26 @@ body {
 .playerX {
   background-color: #fb474d;
   font-size: 40px;
-  // content: "X";
+  font-family: fantasy;
 }
  .playerO {
   background-color: #74bfdd;
   font-size: 40px;
-  // content: "O";
+  font-family: fantasy;
 }
 
 .heading {
   text-align: center;
   color: blue;
+}
+
+.userform {
+  text-align: center;
+}
+
+.copyrights {
+  text-align: center;
+  color: gray;
+  font-size: 15px;
+  font-family: fantasy;
 }

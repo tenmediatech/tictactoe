@@ -12,18 +12,21 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
+
       <div class="container">
         <div class="row">
           <div class="col-6 col-md-12 box teal" id="playerX">
             <h1 class="players">Tic Tac Toe</h1>
           </div>
-        <br />
+        </div>
+      </div>
+      <br />
       <!-- sign up form -->
-      <div class="container">
-        <br>
-        <div class="row">
-          <div class="col-6 col-md-3 box teal" id="playerX">
+      <!-- <div class="container"> -->
+        <!-- <div class="row"> -->
+          <!-- <div class="col-6 col-md-3 box teal" id="playerX"> -->
             <!-- <h3 id="sign-up-message"></h3> -->
+          <div class="userform">
             <form id="sign-up-form">
               <!-- <fieldset> -->
                 <!-- <legend>Sign Up!</legend> -->
@@ -34,10 +37,11 @@
                 <!-- <input type="submit" placeholder="Sign Up"/> -->
               <!-- </fieldset> -->
             </form>
-          </div>
+          <br />
+          <!-- </div> -->
 
       <!-- sign in -->
-        <div class="col-6 col-md-3 box teal" id="playerX">
+        <!-- <div class="col-6 col-md-3 box teal" id="playerX"> -->
           <!-- <h3 id="sign-in-message"></h3> -->
           <form id="sign-in-form">
             <!-- <fieldset> -->
@@ -47,36 +51,40 @@
               <button type="submit">Sign In</button>
             <!-- </fieldset> -->
           </form>
-        </div>
+        <!-- </div> -->
   <br />
       <!-- Change password -->
       <!-- <div class="container"> -->
         <!-- <div class="row"> -->
-        <div class="col-6 col-md-3 box teal" id="playerX">
+        <!-- <div class="col-6 col-md-3 box teal" id="playerX"> -->
           <!-- <h3 id="change-password-message"></h3> -->
-          <form id="change-password-form" class="hidden">
+          <form id="change-password-form">
             <!-- <fieldset> -->
               <!-- <legend>Change Password!</legend> -->
               <input required placeholder="Old Password" name="passwords[old]" type="password"/>
               <input required placeholder="New Password" name="passwords[new]" type="password"/>
-              <input type="submit" placeholder="Change Password"/>
+              <button type="submit">Submit</button>
             <!-- </fieldset> -->
           </form>
-        </div>
+        <!-- </div> -->
       <!-- sout out -->
       <br />
-          <div class="col-6 col-md-3 box teal" id="playerX">
+          <!-- <div class="col-6 col-md-3 box teal" id="playerX"> -->
+          <div class="actionbutton">
             <button id="sign-out-button">Sign Out</button>
             <button id="newGame">New Game</button>
             <button id="getGames">Get Games</button>
           </div>
-        </div>
+            <br />
+            <!-- <br /> -->
+          </div>
+        <!-- </div>
       </div>
-    </div>
-    <br>
+    </div> -->
       <!-- Game Board -->
-      <div id="loadGame">
-        <div class="row">
+    <div class="container">
+        <div id="loadGame">
+          <div class="row">
           <div class="col-md-6 box teal" id="playerX"><h3 class="players">Player X</h3></div>
           <div class="col-md-6 box teal" id="playerO"><h3 class="players">Player O</h3></div>
         </div>
@@ -96,11 +104,13 @@
           <div class="col-6 col-md-4 box teal" id="box9" data-index='8'></div>
         </div>
       </div>
-        <div class="row">
+      <div class="row">
           <div class="col-6 col-md-12 box teal" id="feedback">
-            <h2 class="feedback">Feedback</h2>
-        </div>
+            <h2 class="feedback">Welcome</h2>
+          </div>
       </div>
     </div>
-    </body>
+    <br />
+    <div class="copyrights">GA WDI Project 1, By: Tenzin</div>
+  </body>
 </html>
