@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Example</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <!-- Heading of Game Board -->
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-12 box teal" id="playerX">
+            <h1 class="players">Tic Tac Toe</h1>
+          </div>
+        </div>
+      </div>
+      <br />
+      <!-- sign up form -->
+          <div class="userform">
+            <form id="sign-up-form">
+                <input required placeholder="Enter Email" name="credentials[email]" type="email" />
+                <input required placeholder="Password" name="credentials[password]" type="password"/>
+                <input required placeholder="Confirm Password" name="credentials[password_confirmation]" type="password"/>
+                <button type="submit">Sign Up</button>
+            </form>
+          <br />
+
+      <!-- sign in -->
+          <form id="sign-in-form">
+              <input required placeholder="Enter Email" name="credentials[email]" type="email" />
+              <input required placeholder="Password" name="credentials[password]" type="password"/>
+              <button type="submit">Sign In</button>
+          </form>
+  <br />
+      <!-- Change password -->
+          <form id="change-password-form">
+              <input required placeholder="Old Password" name="passwords[old]" type="password"/>
+              <input required placeholder="New Password" name="passwords[new]" type="password"/>
+              <button type="submit">Submit</button>
+          </form>
+      <br />
+          <!-- Game Control Buttons-->
+          <div class="actionbutton">
+            <button id="sign-out-button">Sign Out</button>
+            <button id="newGame">New Game</button>
+            <button id="getGames">Get Games</button>
+          </div>
+            <br />
+          </div>
+      <!-- Game Board -->
+      <div class="container">
+      <div id="loadGame">
+        <div class="row">
+          <div class="col-md-6 box teal" id="playerX"><h3 class="players">Player X</h3></div>
+          <div class="col-md-6 box teal" id="playerO"><h3 class="players">Player O</h3></div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-4 box teal" id="box1" data-index='0'></div>
+          <div class="col-6 col-md-4 box teal" id="box2" data-index='1'></div>
+          <div class="col-6 col-md-4 box teal" id="box3" data-index='2'></div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-4 box teal" id="box4" data-index='3'></div>
+          <div class="col-6 col-md-4 box teal" id="box5" data-index='4'></div>
+          <div class="col-6 col-md-4 box teal" id="box6" data-index='5'></div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-4 box teal" id="box7" data-index='6'></div>
+          <div class="col-6 col-md-4 box teal" id="box8" data-index='7'></div>
+          <div class="col-6 col-md-4 box teal" id="box9" data-index='8'></div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-6 col-md-12 box teal" id="feedback">
+            <h2 class="feedback">Welcom</h2>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="copyrights">GA WDI Project 1, By: Tenzin</div>
+  </body>
+</html>
