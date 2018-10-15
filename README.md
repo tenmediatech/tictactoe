@@ -38,7 +38,7 @@ Steps followed in developing this single page game application
 
 Documentation
 
-1) Repository on GitHub: https://tenmediatech.github.io/tictactoe/
+1) Repository on GitHub: https://tenmediatech.github.io/tictactoe-final/
 
 2) Repository Description: Single page browser game application |  Website: http://tenmediatech.com/tic-tac-toe/
 
